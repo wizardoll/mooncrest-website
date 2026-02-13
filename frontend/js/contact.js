@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return re.test(email);
   }
 
-  contactForm.addEventListener('submit', async (e) => {
+  contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -24,26 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const formData = { name, email, message };
+    // Backend is not live – placeholder for future server-side setup
+    alert("Form validated successfully. In a live site, this would now be sent to the server.");
 
-    try {
-      const response = await fetch('YOUR_REAL_BACKEND_URL_HERE', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        alert('Thank you! Your message has been sent.');
-        contactForm.reset();
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-
-    } catch (error) {
-      console.error(error);
-      alert('Network error. Please try again.');
-    }
+    contactForm.reset();
   });
 
 });
