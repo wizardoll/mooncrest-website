@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const contactForm = document.getElementById('contactForm');
 
+  if (!contactForm) return;   
+
   function isValidEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
@@ -24,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Backend is not live – placeholder for future server-side setup
     alert("Form validated successfully. In a live site, this would now be sent to the server.");
 
     contactForm.reset();
