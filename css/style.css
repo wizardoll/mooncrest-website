@@ -5,20 +5,20 @@
   --gold: #c9a24d;
 }
 
-/* Custom colors for Bootstrap elements */
+
 .text-maroon { color: var(--maroon) !important; }
 .bg-maroon { background-color: var(--maroon) !important; }
 .text-primary { color: var(--turquoise) !important; }
 .btn-primary { background-color: var(--turquoise); border-color: var(--turquoise); }
 .btn-primary:hover { background-color: #239a98; border-color: #239a98; }
 
-/* Hero Section */
+
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* City Image */
+
 .city-section img{
   width: 100%;
   height: 300px;
@@ -26,12 +26,11 @@
   display: block;
 }
 
-/* Cards */
 .card h3 {
   font-weight: 600;
 }
 
-/* Footer */
+
 .footer {
   font-size: 0.9rem;
 }
@@ -47,22 +46,22 @@ h1 {
     margin-right: 15px;
 }
 
-/* Gold color for navbar links */
+
 .text-gold {
-  color: #FFD700 !important; /* bright gold */
+  color: #FFD700 !important; 
 }
 
-/* Gold button styling */
+
 .btn-gold {
   background-color: #FFD700;
-  color: #800000; /* maroon text for contrast */
+  color: #800000; 
   border-radius: 5px;
   padding: 8px 20px;
   transition: background-color 0.3s;
 }
 
 .btn-gold:hover {
-  background-color: #e6c200; /* slightly darker gold on hover */
+  background-color: #e6c200; 
   color: #800000;
 }
 
@@ -72,16 +71,16 @@ p {
 }
 
 .bg-box {
-  background-color: #e0c085 !important; /* bright gold */
-  color: #800000; /* optional: maroon text for contrast */
+  background-color: #e0c085 !important;
+  color: #800000;
 }
 
 .bg-light {
-  background-color: #e2b04c; /* light gray background */
+  background-color: #e2b04c; 
 }
 
 .card {
-  background-color: #e1cc63; /* white card background */
+  background-color: #e1cc63; 
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
@@ -92,7 +91,7 @@ p {
   color: #800000;
 }
 
-/* Optional: animate.css library for fade-in effect */
+
 .card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
@@ -100,13 +99,13 @@ p {
 
 .city2 {
   background-image: url('https://i1.wp.com/my-passion.blog/wp-content/uploads/2020/07/Black-and-White-City-at-Night-V.png?ssl=1');
-  background-size: cover;       /* cover entire section */
-  background-position: center;  /* center the image */
+  background-size: cover;       
+  background-position: center;  
   background-repeat: no-repeat;
-  height: 500px;                /* adjust height as needed */
+  height: 500px;               
   display: flex;
-  align-items: center;          /* vertical center */
-  justify-content: center;      /* horizontal center */
+  align-items: center;       
+  justify-content: center;      
   position: relative;
 }
 
@@ -142,31 +141,57 @@ background-color:#7aeae8
   max-width: 500px;
 }
 
-/* Button centering */
+
 #contactForm button {
   margin-top: 15px;
 }
 
-
-/* Yellow form background */
 #contactForm {
-  background-color: #ffc107; /* gold/yellow */
+  background-color: #ffc107;
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
- 
 }
 
-/* Inputs stay clean on yellow */
 #contactForm .form-control {
   background-color: #ffffff;
 }
 
-/* Button cont*/
-
 #contactForm {
-  margin-top: 60px; /* space from the top/hero */
+  margin-top: 60px; 
 }
 
+button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6a5acd; 
+  transition: 0.3s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.map-section {
+  margin-top: 60px;
+}
+
+.navbar-brand{
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #800000; /* your maroon */
+  letter-spacing: 2px;
+}
 
 

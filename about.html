@@ -14,6 +14,7 @@
 
 </head>
 <body>
+  
 
  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-maroon shadow-sm">
@@ -61,7 +62,7 @@
   <!-- HERO SECTION -->
   <header class="hero text-center py-5 btn-git">
     <div class="container">
-      <h1 class="display-4 text-maroon mb-3">About Us</h1>
+      <h1 class="display-4 text-maroon mb-3 fade-in">About Us</h1>
       <p class="lead mb-4">Empowering small business owners with clear, professional accounting support.</p>
     </div>
   </header>
@@ -85,7 +86,7 @@
             I provide tailored support to suit your needs. From setting up your bookkeeping, running payroll, to lodging BAS and tax returns. I also offer reports and training if you want to learn how to manage your finances yourself.
           </p>
           <p class="fs-5">
-            I believe accounting is a journey, not just a service. My values are warmth, honesty, and trust — and I’m here to guide you every step of the way.
+            I believe accounting is a journey, not just a service. My values are warmth, honesty, and trust and I’m here to guide you every step of the way.
           </p>
         </div>
       </div>
@@ -100,10 +101,57 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer py-3 bg-maroon text-white text-center">
-    <p>© 2026 Accounting & Bookkeeping Services</p>
-  </footer>
+ <footer class="bg-maroon text-white text-center py-5">
+  <div class="container">
+
+    <!-- Business Info -->
+    <h5 class="mb-2">Mooncrest Accounting & Bookkeeping Services</h5>
+    <p class="mb-3">Serving clients across Australia</p>
+
+    <!-- Social Media -->
+    <div class="mb-4">
+      <a href="#" class="text-white me-3 fs-4">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#" class="text-white fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </div>
+
+    <!-- Email Signup -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <form id="subscribeForm">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email for tax updates" required>
+            <button class="btn btn-light" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="mb-0">
+      © 2026 Mooncrest Accounting & Bookkeeping Services. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const subscribeForm = document.getElementById("subscribeForm");
+
+    if (subscribeForm) {
+      subscribeForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Thank you for subscribing to tax updates!");
+        this.reset();
+      });
+    }
+  });
+</script>
+
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
